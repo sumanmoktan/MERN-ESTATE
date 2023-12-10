@@ -139,7 +139,7 @@ const Profile = () => {
 
   const handleListingDelete = async (listingId) => {
     try {
-      const res = await fetch(`/api/listing/delete/${listingId}`, {
+      const res = await fetch(`/api/v1/house/delete/${listingId}`, {
         method: 'DELETE',
       });
       const data = await res.json();
